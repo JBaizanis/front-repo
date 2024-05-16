@@ -11,6 +11,7 @@ const authRef = ref(true);
 const { data, performRequest } = useRemoteData(urlRef, authRef);
 
 onMounted(() => {
+  console.log(urlRef);
   performRequest();
 });
 </script>
